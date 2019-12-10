@@ -3,10 +3,11 @@ pipeline{
 	
 	stages{
 		stage ('Execute test'){
-			withMaven(maven : 'MAVEN_HOME'){
-				sh 'mvn clean verify'
-			}	
-			
+			steps{
+				withMaven(maven : 'MAVEN_HOME'){
+					sh 'mvn clean verify'
+				}	
+			}			
 		}	
 	
 	}
