@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src/test/resources/features/blankToTest",
         glue = "blank",
-		tags = {"@executar1234,@naoExecutar332"}
+		tags = {"@executar,@naoExecutar332"}
         
 )
 public class BlankTestSuite {}
