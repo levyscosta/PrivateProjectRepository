@@ -1,0 +1,14 @@
+pipeline{
+	agent any
+	
+	stages{
+		stage ('Execute test'){
+			withMaven(maven : 'MAVEN_HOME'){
+				sh 'mvn clean verify'
+			}	
+			
+		}	
+	
+	}
+
+}
