@@ -1,9 +1,9 @@
 pipeline{
 	agent any
 	
-	stages{
-		stage ('Execute test'){
-			steps{
+	stages {
+		stage ('Execute test') {
+			steps {
 				withMaven(maven : 'MAVEN_HOME'){
 					sh 'mvn clean verify'
 				}	
